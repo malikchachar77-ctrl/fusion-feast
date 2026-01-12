@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project</title>
+  <style>
+    body {
+      background-color: #E8DAC4;
+      color: #3e160c;
+    }
+
+    .logo {
+      font-size: 35px;
+      /*margin-top: 5px;
+            margin-bottom:0;*/
+      margin-top: 50px;
+      margin-right: 20px;
+
+    }
+
+    a {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      background-color: #E8DAC4;
+      color: #3e160c;
+      align-items: center;
+      display: inline block;
+      gap: 60px;
+      /*align-items: center;
+            justify-content: center;*/
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      text-align: center;
+      text-decoration: none;
+    }
+
+
+    .home {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 25px;
+      font-size: 45px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .menu {
+      box-sizing: 20px;
+
+
+    }
+
+    h1 {
+      text-align: center;
+      font-style: inherit;
+      font-size: 70px;
+      margin-top: 50px;
+      text-decoration: none;
+
+    }
+
+
+    .button {
+
+      all: unset;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      position: relative;
+      padding: 0.6em 2em;
+      border: #3e160c;
+      border-radius: 0.25em;
+      color: #3e160c;
+      font-size: 1.5em;
+      font-weight: 600;
+      cursor: pointer;
+      overflow: hidden;
+      transition: border 300ms, color 300ms;
+      user-select: none;
+      margin-left: 800px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .button p {
+      z-index: 1;
+    }
+
+    .button:hover {
+      color: #212121;
+    }
+
+    .button:active {
+      border-color: #E8DAC4;
+    }
+
+    .button::after,
+    .button::before {
+
+      content: "";
+      position: absolute;
+      width: 9em;
+      aspect-ratio: 1;
+      background: #3e160c;
+      opacity: 50%;
+      border-radius: 50%;
+      transition: transform 500ms;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .button::before {
+      left: 0px;
+      transform: translateX(-8em);
+    }
+
+    .button::after {
+      right: 0px;
+      transform: translateX(8em);
+    }
+
+    .button:hover:before {
+      transform: translateX(-1em);
+    }
+
+    .button:hover:after {
+      transform: translateX(1em);
+    }
+
+    .button:active:before,
+    .button:active:after {
+      background: #3e160c;
+    }
+
+    img {
+      height: 550px;
+      width: 1300px;
+      margin-left: 330px;
+      margin-right: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="home">
+      <div id="Navbar"></div>
+      <a class="navber" href="./index.html">Home</a>
+      <a class="navber" href="./hackathon/menu.html">Menu</a>
+      <a class="navber" href="./about and contact/about.html">About</a>
+      <a class="navber" href="./about and contact/contact.html">Contect</a>
+
+    </div>
+    <hr>
+    <h1>
+      Welcome to Food Heaven Where<br>Flavor Meets Excellence!</h1>
+    <box id="menu"></box>
+    <button class="button">
+      <p>View menu</p>
+  </div>
+  </button>
+
+
+  <img src="/677fab9ee8e55f7fe15592ae_hero-image.avif" alt="">
+  </div>
+</body>
+
+</html>
