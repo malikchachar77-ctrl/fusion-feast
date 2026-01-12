@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #E8D9C4;
+            color: #3E160C;
+
+        }
+        .links{
+             color:#3E160C;
+     /* text-decoration: none;*/
+      padding: 8px 15px;
+      margin: 0 5px;
+      /*border-radius: 5px;*/
+      /*transition: 0.3px;*/
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      display: flex; 
+    gap: 70px;
+    transition: all;
+    transition-duration: 2s;
+    }
+    a{color: #3E160C;
+    text-decoration: none;font-weight: 900;
+    font-size: 30px;
+}
+.links :hover{
+  text-decoration: underline;
+  color: #785D32;
+  font-weight: 600;
+}
+
+#box{width: 500px;
+height: 30px;
+border: solid;
+border-radius: 50px;
+border-color: #3E160C;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+margin-left: 578px;
+margin-right: 300px;
+font-size: 20px;
+}
+ h1{
+   
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+
+}
+/* From Uiverse.io by BHARGAVPATEL1244 */ 
+button {
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin-top: 0;
+ margin-left: 750px;
+ margin-bottom: 20px;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 500px;
+ overflow: hidden;
+
+ color: ghostwhite;
+ 
+}
+
+button span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+
+button:hover span {
+ color: black;
+}
+
+button::before,
+button::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+button::before {
+ content: "";
+ background:#3E160C;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+
+}
+
+button:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+.main{background-color: aliceblue;
+
+margin: 40px;}
+.img{
+    
+display: grid;
+justify-content: center;
+align-items: center;}
+
+.second {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #785D32;
+  gap: 30px;
+}
+
+.text-block {
+  max-width: 450px;
+  color: #E8D9C4;
+ 
+}
+
+.text-block h1 {
+  right: 0px;
+  left: 10px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin-top: 30px;
+   font-size: 50px;
+
+
+}
+
+.text-block p {
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text-block h3{font-weight: bolder;
+  font-size: 20px;
+}
+ .text-block button {
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin-top: 0;
+ margin-left: 750px;
+ margin-bottom: 20px;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 500px;
+ overflow: hidden;
+
+ color: black;
+ 
+}
+
+ .text-block button span {
+
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+ button:hover span {
+color: blanchedalmond;
+}
+
+ .text-block button::before,
+ .text-block button::after {
+
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+.text-block button::before {
+  
+ content: "";
+ background:#3E160C;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+
+}
+
+.text-block button:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+.image-college {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 300px;
+}
+
+.aim-imagem {
+  border-radius: 20px;
+  border: solid white;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 0%;
+}
+
+.img-1 {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+top: 100px !important;
+  left: 330px;
+
+}
+
+.img-2 {
+  width: 250px;
+  height: 200px !important;
+  border-radius: 20px;
+  border: solid white;
+  position: absolute;
+  z-index: 0;
+  top: 50px;
+  right: 270px;
+}
+
+.img-3 {
+  width: 200px;
+  height: 200px !important;
+  position: absolute;
+  border-radius: 30px;
+  border: solid white;
+  top: 300px;
+  right: 300px;
+  z-index: 4;
+}
+
+.img-4 {
+  width: 180px;
+  height: 200px !important;
+  position: absolute;
+  border-radius: 30px;
+  border: solid white;
+  top: 350px;
+  left: 300px;
+  z-index: 4;
+}
+.child  img{
+  background-color: rgb(231, 205, 209);
+background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+margin-left: 750px;
+margin-top: 20px;
+}
+.pic{width: 50px;
+height: 60px;
+background: transparent;
+}
+.child h1{ 
+  font-size: 50px;
+/*margin-left: 70px;*/
+font-weight: 900;
+font-family:'Times New Roman', Times, serif;
+word-spacing: 5px; 
+padding: 50px;}
+.main-cards{
+margin: 70px;
+  width: 400px;
+  height: 700px;
+  border: solid;
+  border-color: black;
+  
+  border-radius: 20px;
+}
+.gate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+.card1{width: 350px;
+  height: 500px;
+margin-right: 10px;
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+
+
+border-radius: 20px;}
+.text{border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border: solid;
+/*width: 400px;*/
+height: 178px;
+
+border-radius: 10px;
+}
+.text h3{ text-align: center;
+margin: 30px;
+font-size: 30px;
+font-weight: 450;
+
+
+}
+.text p {display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+margin-bottom: 7px;}
+ .main-cards button {
+  width: 190px;
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+
+ margin-top: 20px;
+ margin-left: 70px;
+
+ margin-bottom: 30px;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+ letter-spacing: 0.05rem;
+ font-weight: 700;
+ font-size: 17px;
+ border-radius: 500px;
+ overflow: hidden;
+color: white;
+ color: black
+ 
+}
+
+.main-cards button span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+
+}
+
+.main-cards button:hover span {
+color: gainsboro;
+}
+
+ .main-cards button::before,
+
+.main-cards button::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+
+}
+
+.main-cards button::before {
+ content: "";
+ background:#3E160C;
+
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+
+}
+
+.main-cards button:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+.third{
+  width: 100%;
+  height: 100%;
+background-color: #3E160C;
+margin: 1px;
+}
+.third h1{
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: white;
+  gap: 20px;
+
+
+}
+@media(max-width :600px){body{ body{
+            background-color: #E8D9C4;
+            color: #3E160C;}}
+ 
+  .links{
+    
+      padding: 8px 15px;
+      margin: 0 5px;
+  
+      display: inline-block; 
+  }
+  .links :hover{
+  text-decoration: underline;
+  color: #785D32;
+  font-weight: 600;
+}
+#box{width: 500px;
+height: 30px;
+border: solid;
+border-radius: 50px;
+border-color: #3E160C;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+margin-left: 578px;
+margin-right: 300px;
+font-size: 20px;
+}
+ h1{
+   
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}}
+
+ 
+    </style>
+</head>
+<body>
+     <div class="main">
+    <div class="links">
+    <a href="./index1.html"> Home</a>
+        <a href="../hackathon/menu.html">Menu</a>
+        <a href="../about and contact/about.html">About</a>
+        <a href="../about and contact/contact.html">Contact</a>
+
+    </div>
+    <hr>
+<div id="box">
+    loved by 2.6k with 6.9 eating
+</div>
+<div>
+    <h1>
+        Welcome to Food Heaven Where <br>Flavor Meets Excellence!
+    </h1>
+</div>
+   
+<button> <span>View menu</span></button>
+<div class="img">
+<img src="./677fab9ee8e55f7fe15592ae_hero-image-p-1080.avif" alt="">
+</div>
+ <div class="second">
+  <div class="text-block">
+    <h1>A Healthier Way Now Has  A Seat At The Table</h1>
+    <p>
+      Take advantage of exclusive deals and packages designed to elevate your stay.
+      Whether it’s a romantic <br> getaway or a family vacation.
+    </p>
+    <h3><li>Whatever your taste, we have something for everyone.</li></h3>
+    <h3><li>Browse, select, and pay securely – all from the comfort.</li></h3>
+    <h3><li>Save more with special promotions and discounts.</li></h3>
+    <button>View Menu</button>
+  </div>
+
+  <div class="image-college">
+    <img src="./67863872ecea053d2853d559_feature-image-6.webp" alt="Main" class="aim-imagem">
+    <img src="../New folder (3)/67863877a663728150bf7af0_feature-image-7.webp" alt="Overlay 1" class="img-1">
+    <img src="./678646c1f02340a0baa7b936_food-menu-image.webp" alt="Overlay 2" class="img-2">
+    <img src="./677f768da5b88fb445ab55c3_v2-card-image.avif" alt="Overlay 3" class="img-3">
+    <img src="./6785fefc783c9b1d9c5323fa_feature-left-image-2-p-500.avif" alt="Overlay 4" class="img-4">
+  </div>
+</div>
+<div class="child">
+  <img src="./download.jpg" alt="" class="pic">
+  <h1>We’re always here for you</h1>
+ </div>
+ <div class="gate">
+ <div class=" main-cards">
+  <img src="./6785fefc783c9b1d9c5323fa_feature-left-image-2-p-500.avif" alt=""class="card1">
+<div class="text">
+  <h3>Breakfast Carvings</h3>
+<p><b>Light meal </b>
+<b>Fruit drink</b>
+ <b>From 7am</b></p>
+ <button>Viwe Menu</button>
+</div>
+ </div>
+ <div class=" main-cards">
+  <img src="./677f768da5b88fb445ab55c3_v2-card-image.avif" alt=""class="card1">
+<div class="text">
+  <h3>Lunch Blast</h3>
+<p><b>Light meal </b>
+<b>Fruit drink</b>
+ <b>From 7am</b></p>
+ <button>Viwe Menu</button>
+</div>
+ </div>
+ <div class=" main-cards">
+  <img src="./6785fefc783c9b1d9c5323fa_feature-left-image-2-p-500.avif" alt=""class="card1">
+<div class="text">
+  <h3>Dinner Mednice</h3>
+<p><b>Light meal </b>
+<b>Fruit drink</b>
+ <b>From 7am</b></p>
+ <button>Viwe Menu</button>
+</div>
+ </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body></html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+    
+       *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+       }
+           
+        
+        body{
+            padding: 50px 15px;
+            background-color: #E8D9C4;
+            color: #3e160c;
+            
+        }
+        .container{
+            max-width:1100px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 3px;
+        }
+
+        /*image Layout*/
+
+
+        .image-gallery{
+            display: flex;
+            gap: 12px;
+            padding: 12px;
+    
+        }
+        .main-image{
+            display: block;
+            
+
+        }
+        .main-image img{
+            display: block;
+            height: 500px;
+            width: 250px;
+            object-fit: cover;
+            padding: 5px;
+            border: 1px solid #3e160c;
+        }
+        .side-image{
+           
+            gap :20px;
+            align-content: center;
+            height: 500px;
+            
+           
+           
+            
+
+        }
+        .side-image img{
+            height: 240px;
+            width: 220px;
+            object-fit: cover;
+            padding: 5px;
+            border: 1px solid #3e160c;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            margin-bottom: 8px;
+            
+            
+            
+        }
+       
+        /*Badge Styling
+
+        .badge{
+            color: #e8dac4;
+            background-color: #3e160c;
+            border-radius: 5px;
+            align-items: center;
+            top: 40px;
+            right: -35px;
+            display: block;
+            align-content: center;
+            padding: 15px;
+            box-shadow: gray rgba(0, 0, 0, 3);
+            
+
+        }
+        .badge-percent{
+            font-weight: bold;
+            font-size: 24px;
+
+        }
+        .badge-text{
+            font-weight: bold;
+            font-size: 12px;
+        }*/
+
+        .text-section{
+            align-items: center;
+            margin: 15px;
+        }
+        .text-section{
+            display: inline;
+            margin-top: 0px;
+        }
+
+       h2{
+            line-height: 1.5;
+        }
+         h1{
+            letter-spacing: 0.5;
+            line-height: 1.5;
+          
+
+
+        }
+        p{
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+
+        /*Button Styling*/
+
+        .btn{
+        font-weight: bold;
+         background-color: #3e160c;
+         color: #e8dac4;
+         border-radius: 5px;
+         padding: 15px;
+         text-decoration: none;
+         display: inline-block;
+         transition: 0.3s;
+        
+
+
+        }
+        .btn:hover{
+            transform: scale(1.1);
+        }
+
+      
+
+       
+      
+
+
+
+    </style>
+</head>
+<body>
+    <section class="about-restaurant">
+        <div class="container">
+            <div class="image-gallery">
+                <div class="main-image">
+                    <img src=".//images/pexels-8pcarlos-morocho-2150734957-35509708.jpg">
+                    
+                    
+                </div>
+                
+                        <div class="side-image">
+                            <img src="./images/pexels-cottonbro-4253124.jpg">
+                            <img src ="images/pexels-shantanu-pal-938952-2679501.jpg">
+                            </div>
+
+                        
+                </div>
+                <div class="text-section">
+                    <div class="heading-1"><h2>About Us </h2></div>
+                    <div class="heading-2"><h1>We Only Serve Delicious Quality Food</h1></div>
+                    <p>Quality is the heartbeat of Fusion Feast. we Honor the time tested techniques of traditional desi cooking where the lentils simmer for hoursndoor is always hot while bringing that same level of precision of our chinesespecialities.our Philpsophy is simple clean ingredients ,organic spices and zero shortcuts.we have paired this culinary execellence with a refined welcoming enviroment where the lighting is soft and the hospitality is grand.From a family feast of biryani to a quick ,savory plate of manchorian we provide a premiuim quality and choose best flavours for our customers.Our menu offers a variety of options suit all diests, preferences and occasions.</p>
+                
+                <div class="button"> <a href="#" class="btn" >View Our Menu</a></div>
+                  
+            </div>
+        </div>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="script.js"></script>
+</body>
+</html>
